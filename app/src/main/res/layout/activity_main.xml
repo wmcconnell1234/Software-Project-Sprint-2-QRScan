@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gpsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DatetextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnSnap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="298dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="search"
+        android:text="@string/button_search" />
+
+    <ImageView
+        android:id="@+id/ivGallery"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/alert_light_frame" />
+
+    <Button
+        android:id="@+id/btnSnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="takePicture"
+        android:text="SNAP" />
+
+    <EditText
+        android:id="@+id/editTextCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivGallery"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Caption" />
+
+    <Button
+        android:id="@+id/buttonSaveCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/editTextCaption"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="33dp"
+        android:onClick="saveCaption"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCaption"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="53dp"
+        android:onClick="Left"
+        android:text="Left" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCaption"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="Right"
+        android:text="Right" />
+
+    <TextView
+        android:id="@+id/DatetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCaption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/button_share"
+        android:onClick="Share"
+        android:text="@string/button_share" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:hint="@string/button_scan"
+        android:onClick="scan"
+        android:text="@string/button_scan" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpsTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="27dp"
+        android:layout_toStartOf="@+id/buttonRight"
+        android:layout_toEndOf="@+id/buttonLeft"
+        android:onClick="Upload"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/textViewUpload"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpload"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddToFolder"
+        android:layout_alignEnd="@+id/btnSnap2"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="Delete"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnFolderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSnap"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="ViewFolder"
+        android:text="Folders" />
+
+    <Button
+        android:id="@+id/btnAddToFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSnap2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="AddToFolder"
+        android:text="Add To" />
+
+    <TextView
+        android:id="@+id/FaceNum_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_below="@+id/textViewUpload"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="212dp"
+        android:text="TextView" />
+
+</RelativeLayout>
